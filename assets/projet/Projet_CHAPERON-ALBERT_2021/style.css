@@ -1,0 +1,542 @@
+/* CSS files add styling rules to your content */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2% 10%;
+  background-image: url("https://cdn.glitch.com/9d671c9f-c112-4819-a1b3-e3f01dd37581%2Ffond-hologramme-maille-arc-ciel-banniere-univers-liquide-aux-couleurs-princesse-toile-fond-degrade-fantastique_121461-835.jpg?v=1617788712124");
+
+  background-attachment: fixed;
+  background-color: pink;
+
+  background-size: cover;
+}
+/*~~~~temporaire~~~~*/
+/*div {
+  background-color: pink;
+  
+}*/
+/*~~~~~~~~~~~~~~~~~~*/
+#titre {
+  text-align: center;
+  border-color: #000000;
+  border-style: solid;
+  background-color: none;
+}
+#logo {
+  width: 80%;
+}
+#menu {
+  border-style: solid;
+  background-color: #EE82EE;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+#menu li {
+  display: inline-block;
+  cursor: pointer;
+}
+#menu li:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #00BAAD;
+}
+#information {
+  text-align: center;
+  width: 24.6%;
+  display: inline-block;
+  margin-left: 0%;
+}
+
+#catalogue {
+  text-align: center;
+  width: 24.6%;
+  margin-left: 0%;
+  display: inline-block;
+}
+#commande {
+  margin-right: 0%;
+  text-align: center;
+  width: 24.6%;
+  max-height: 100px;
+  display: inline-block;
+}
+#nouscontacter {
+  margin-right: 0%;
+  text-align: center;
+  width: 24.6%;
+  max-height: 100px;
+  display: inline-block;
+}
+
+#lic {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sections p {
+  text-align: justify;
+}
+#section1 {
+  display: block;
+}
+#divImg {
+  /*background-color: black;*/
+  margin: 0 10%;
+  position: static;
+  
+}
+#section1 h1 {
+  text-align: center;
+}
+/*~~~~~~~~Catalogue~~~~~~~~~*/
+#section2 {
+  display: none;
+}
+.produit {
+  width: 30%;
+  overflow: auto;
+  float: left;
+}
+
+.catalpiece {
+  padding: 30px 20px;
+  overflow: hidden;
+  display: block;
+  border: solid;
+  background-color: #E0E0E0;
+  margin: 10px 0 20px 0;
+  /*background-color: #a0a0a0;*/
+}
+
+.catalpiece .produit {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border: solid;
+}
+
+.BlablaDescriptif {
+  margin-left: 33%;
+  /*vertical-align: middle;*/
+  height: 50%;
+  display: block;
+  margin-top: auto;
+  margin-right: 2%;
+}
+.panier,
+.croix {
+  width: 5em;
+  margin-right: 10%;
+  float: right;
+  margin-bottom: 0%;
+  cursor: pointer;
+}
+
+#scrolltothetop {
+  position: fixed;
+  text-align: center;
+  /*display: none;*/
+  bottom: 1.5em;
+  right: 0.5em;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.75em;
+  padding-top: 0.75em;
+  padding-bottom: 0.5em;
+  border-radius: 30%;
+  opacity: 0;
+  background: grey;
+}
+
+/*~~~~~~~~Commande~~~~~~~~~~*/
+#section3 {
+  display: none;
+}
+
+#Abonnement {
+  margin-top: 3%;
+  margin-bottom: 0%;
+  margin-right: 3%;
+  margin-left: 3%;
+  padding: 0%;
+  text-align: center;
+
+  /*position: relative;
+  top: 25%;
+  right: 7%;
+  height: 70%;
+  width: 40%;*/
+}
+.EntrepriseParticulier {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+
+  display: inline-block;
+
+  margin-top: 20px;
+  margin-bottom: 10%;
+  margin-left: 0%;
+  margin-right: 7%;
+  width: 35%;
+  min-width: 300px;
+}
+#enteteParticuliere {
+  background-color: #7A238A;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#entete-entreprise {
+  background-color: #353535;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/*~~~~~~radio button personnalisé~~~~~~*/
+.Forfait {
+  text-align: left;
+}
+
+[type="radio"] {
+  position: relative;
+  right: 0%;
+  opacity: 0.01;
+}
+[type="radio"] + label {
+  position: relative;
+  left: 2em;
+  font-size: 1.05em;
+  line-height: 1.7;
+  cursor: pointer;
+}
+/*Skin  de la nouvelle case avant d'être cheked*/
+[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  right: 105%;
+  bottom: 0%;
+  width: 30%;
+  height: 80%;
+  border: 1px solid #40e0d0;
+  background: #40e0d0;
+  border-radius: 2em;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 1),
+    0 0 0 rgba(255, 255, 255, 1);
+}
+/*skin de la  boule*/
+[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  background: #FFFFFF;
+  width: 10%;
+  height: 70%;
+  border-radius: 50%;
+  right: 125%;
+  top: 24%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 1), 0 0 0 rgba(0, 0, 0, 1);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+/*Changement de  position de la boule*/
+[type="radio"]:checked + label:before {
+  background: #0000FF;
+}
+[type="radio"]:checked + label:after {
+  background: #00FF00;
+  right: 107%;
+}
+
+#PCP,
+#PPP,
+#PCE,
+#PPE {
+  visibility: hidden;
+  position: absolute;
+  background-color: #000000;
+  margin: 0 0% 0 0%;
+  width: 26.32%;
+  min-width: 300px;
+}
+#section3 ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.commandedroite {
+  display: none;
+  border: solid;
+  background-color: #E0E0E0;
+  margin: 10px 0 20px 0;
+  max-width: 45%;
+  float: left;
+}
+.commandedroite h5 {
+  float: left;
+}
+.commandedroite .imageProduit {
+  float: left;
+  width: 90%;
+  border: solid;
+  margin: 1em;
+  /*width: 60%;
+  height: 100%;*/
+}
+.commandegauche {
+  display: none;
+  border: solid;
+  background-color: #E0E0E0;
+  margin: 10px 0 20px 0;
+  max-width: 45%;
+  float: right;
+}
+.commandegauche h5 {
+  float: left;
+}
+.commandegauche .imageProduit {
+  float: right;
+  width: 90%;
+  border: solid;
+  margin: 1em;
+  /*width: 60%;
+  height: 100%;*/
+}
+
+/*~~~~~~~~~Fin de Commande~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~Contact~~~~~~~~~~~~~*/
+#section4 {
+  display: none;
+}
+#section4 > h2 {
+  text-align: center;
+}
+
+#section4 textarea {
+  min-height: 44px;
+  box-shadow: inset 0 1px 2px 0 rgb(50 50 50 / 30%);
+  border: 1px solid #dbdad5;
+  font-weight: 400;
+  font-size: 1.167em;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1%;
+  height: 124px;
+  margin: 0;
+  background-color: #fff;
+}
+#section4 form p {
+  display: none;
+}
+#submit {
+  display: block;
+  text-align: center;
+  background-color: #7A238A;
+  color: #ffffff;
+  margin-left: 1%;
+  padding: 1% 0% 1% 0%;
+  width: 80px;
+  border-radius: 10px;
+}
+/*~~~~~~~~~~~~Ãvis~~~~~~~~~~~~~~~~~*/
+.lastAvis {
+  margin-bottom: 100px;
+}
+.avatar {
+  display: block;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 0 1% 0 0;
+  padding: 0;
+}
+.Grades {
+  float: left;
+  margin-left: 1%;
+  margin-bottom: 3%;
+}
+.Grades a {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 1.5em;
+  float: right;
+  text-decoration: none;
+  color: #000;
+}
+.Grades a:hover,
+.Grades a:focus {
+  color: #a00;
+  cursor: pointer;
+}
+.Grades a:hover ~ a,
+.Grades a:focus ~ a {
+  color: #a00;
+}
+#questionNote {
+  float: left;
+  margin-top: 11px;
+}
+.Nomducompte {
+  display: block;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.Nomducompte:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #00BAAD;
+}
+.fivestars {
+  color: #a00;
+  float: left;
+  font-size: 1.5em;
+  margin-left: 1%;
+}
+.fourstars {
+  color: #000;
+  float: left;
+  font-size: 1.5em;
+}
+
+.Title {
+  display: block;
+  margin-top: 9px;
+  margin-left: 2%;
+  float: left;
+  font-style: italic;
+  font-weight: bold;
+}
+.descriptif {
+  float: left;
+  margin-top: 10px;
+}
+/*~~~~~~~~~Fin  d'Avis~~~~~~~~~~~*/
+.reseau img {
+  border-radius: 100%;
+  height: 35px;
+  float: left;
+  margin: 0 0 0 20px;
+}
+.reseau p {
+  float: left;
+  margin: 10px 30px 5px 10px;
+}
+
+/*~~~~~~~~~Fin de Contact~~~~~~~~~~~*/
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.75em;
+  }
+  #scrolltothetop {
+    bottom: 1.5em;
+    right: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.75em;
+    padding-top: 0.7em;
+    padding-bottom: 0.3em;
+  }
+  #menu {
+    z-index: 2;
+  }
+
+  #information {
+    display: inline-block;
+    width: 13em;
+    padding-top: 0;
+  }
+
+  #information h3 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  #catalogue {
+    display: inline-block;
+    width: 10em;
+    margin-top: 0;
+  }
+  #catalogue h3 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  #commande {
+    display: inline-block;
+    width: 13em;
+  }
+  #commande h3 {
+    margin-top: 0em;
+    margin-bottom: 1em;
+  }
+  #nouscontacter {
+    display: inline-block;
+    width: 10em;
+  }
+
+  #nouscontacter h3 {
+    margin-top: 0em;
+    margin-bottom: 1em;
+  }
+
+  #lic {
+    width: 19em;
+  }
+
+  .produit {
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
+
+  .catalpiece {
+    margin: auto;
+  }
+
+  .catalpiece .produit {
+    width: 80%;
+  }
+
+  .BlablaDescriptif {
+    margin-left: 0;
+  }
+  .commandedroite .imageProduit {
+    margin: 0.4em;
+  }
+
+  .commandegauche .imageProduit {
+    margin: 0.4em;
+  }
+  .croix {
+    position: relative;
+    width: 1em;
+    bottom: 1em;
+    z-index: 1;
+  }
+  .Title {
+    margin-right: 5em;
+  }
+  .reseau img {
+    border-radius: 100%;
+    height: 35px;
+    float: left;
+    margin: 0 0 0 1em;
+  }
+  .reseau p {
+    float: left;
+    margin: 1em 1em 0.5em 1em;
+  }
+}

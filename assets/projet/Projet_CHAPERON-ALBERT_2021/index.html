@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Unicornemeat</title>
+    <link
+      rel="shortcut icon"
+      href="Images/logo_small_icon_only.png"
+    />
+  </head>
+  <body>
+    <div id="titre">
+      <img
+        id="logo"
+        src="Images/logo_large.png"
+      />
+    </div>
+
+    <ul id="menu">
+      <li id="information" onclick="apparition(0)"><h3>Info</h3></li>
+      <li id="catalogue" onclick="apparition(1)"><h3>Catalogue</h3></li>
+      <li id="commande" onclick="apparition(2)"><h3>Commande</h3></li>
+      <li id="nouscontacter" onclick="apparition(3)">
+        <h3>Nous contacter</h3>
+      </li>
+    </ul>
+
+    <br /><br /><br />
+    <div id="sections">
+      <!-- Séction info   -->
+      <div id="section1">
+        <div id="divImg">
+          <img
+            id="lic"
+            src="Images/thinkgeek-canned-unicorn-meat-plush.jpg"
+          />
+        </div>
+        <h1>
+          Pourquoi vous devriez en prendre ?
+        </h1>
+        <p>
+          <!--Description :-->
+          <br />La viande de licorne figure parmi les viandes les plus tendres,
+          les plus rare et les plus magique. Son goût unique et ses bienfaits
+          nutritionnels en font une viande d'exception. Elle offre une diversité
+          de morceaux tellement tendres, que leur cuisson est extrêmement
+          rapide. Goûteuse, tendre et de saveur douce, la viande de licorne est
+          à déguster absolument. Ses qualités organoleptiques, sa couleur
+          arc-en-ciel, sa flaveur, sa jutosité et sa tendreté font de la viande
+          de licorne un produit de choix pour les amateurs de bonne viande.Vous
+          souhaitez commande de la viande licorne en ligne ? Retrouvez dans
+          cette rubrique de notre boucherie en ligne toutes nos viandes de
+          licorne : toutes nos pièces de licorne.Nos pièces de viande de licorne
+          sont emballées en sachets sous-vide, conditionnées en colis réfrigérés
+          breveté, puis livrée en camion réfrigéré en Ile De France ou envoyée
+          par Chronopost 48H en province, Corse, Monaco. N'hésitez pas à
+          contacter le service client pour toute question sur nos pièces de
+          viande en offres spéciales.
+        </p>
+        <h1>
+          Histoire :
+        </h1>
+        <p>
+          Si la profession de Boucher existe officieusement depuis l’antiquité,
+          elle s’est véritablement développée en France à partir du moyen-âge.
+          Réservé à seulement quelques familles, le statut de boucher était
+          alors un statut social assez privilégié. Les bouchers forment alors
+          une corporation très puissante, surtout à Paris. Durant cette période,
+          les bouchers s’opposent régulièrement aux réformes commerciales pour
+          défendre leurs privilèges, ce qui leur vaudra de nombreuses actions
+          administratives et commerciales (fermetures d’établissements et
+          dissolutions). Au XIVe siècle, la Grande boucherie de Paris est créée,
+          rassemblant et contrôlant la quasi-totalité des boucheries de la
+          capitale. De nouvelles règles d’approvisionnement sont également
+          fixées, des marchés obligatoires sont ainsi mis en place, avec
+          l’interdiction faite au boucher de s’approvisionner en bétail en
+          dehors de ces marchés. En 1587, la « Communauté des Maîtres bouchers
+          de la ville de Paris » est créée et permet à tous les bouchers de la
+          ville de disposer de statuts équivalents à ceux des bouchers-étaliers
+          de la Grande Boucherie. Jusqu’en 1673, la grande Boucherie de Paris
+          conserve un pouvoir de justice pour faire appliquer les règles du
+          métier comme le choix, l’achat et la vente des bêtes
+        </p>
+      </div>
+      <!-- Séction Catalogue   -->
+      <div id="section2">
+        <h3>
+          Voici notre catalogue
+        </h3>
+        <div id="catal">
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/train-de-5-cotes-de-licorne-7kg.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                TRAIN DE 5 CÔTES DE LICORNE 7KG SEMI-GROS (5 X 1,2KG) Prix: 1
+                500€
+              </h2>
+              <p>
+                Train de 5 côtes de viande de licorne de 5 x 1,2 kg la pièce
+                (livraison de 5 cotes sous-vide) <br />
+                Origine de la viande de licorne: Allemagne / Irlande / Canada
+                (selon arrivages du matin à Rungis). <br />
+                La côte à l'os de licorne est la vedette des barbecues, c'est un
+                morceau de choix à partager en famille ou entre amis.
+                <br /><br />
+                Conditionnement de la côte à l'os de licorne : Emballage
+                sous-vide envoyé en colis réfrigéré breveté. Conservation de la
+                côte à l'os de licorne : Environ 10 jours au réfrigérateur dans
+                son emballage sous-vide (Voir DLC sur produit) - 6 mois au
+                congélateur.
+              </p>
+            </div>
+
+            <img
+              onclick="choix(0), Total(0)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/filet-de-viande-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                FILET DE LICORNE 3KG SEMI-GROS Prix: 1 200€
+              </h2>
+              <p>
+                Filet de licorne de 3Kg la pièce entière.<br />
+                Origine de la viande de licorne : Allemagne / Irlande / Canada
+                (selon arrivages du matin à Rungis).<br />
+                Le filet de licorne est une partie tendre et savoureuse, c'est
+                la pièce la plus noble de la licorne.<br /><br />
+                Conditionnement du filet de licorne : Emballage sous-vide envoyé
+                en colis réfrigéré breveté. Conservation du filet de licorne :
+                Environ 10 jours au réfrigérateur dans son emballage sous-vide
+                (Voir DLC sur produit) - 6 mois au congélateur.
+              </p>
+            </div>
+            <img
+              onclick="choix(1), Total(1)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/thumbnails_graisse-de-licorne-5g.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                GRAISSE DE LICORNE 5KG Prix: 500€
+              </h2>
+              <p>
+                Graisse de licorne : 5Kg de graisse de licorne<br />
+                Origine de la graisse de licorne : Canada <br />
+                Le graisse de licorne est issue du gras de la crinière du
+                licorne, idéale pour préparer de bonnes frites comme au bon
+                vieux temps !<br />
+                <br />
+                Conditionnement de le graisse de licorne : Emballage sous-vide
+                envoyé en colis réfrigéré breveté. Conservation de le graisse de
+                licorne : Environ 10 jours au réfrigérateur dans son emballage
+                sous-vide (Voir DLC sur produit). <br />
+              </p>
+            </div>
+            <img
+              onclick="choix(2), Total(2)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/entrecotes-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                ENTRECÔTE DE LICORNE (4X250G) Prix: 1 000€
+              </h2>
+              <p>
+                Entrecôte de viande de licorne : <br />
+                Origine de notre viande de licorne : Allemagne / Irlande <br />
+                L'entrecôte de licorne est une tranche de viande qui autrefois
+                devait être taillée entre les côtes mais qui maintenant est
+                plutôt taillées dans le train de côtes désossé. C'est un
+                excellent morceau à griller ou à poêler.<br />
+              </p>
+            </div>
+            <img
+              onclick="choix(3), Total(3)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/pave-de-rumsteak-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                PAVÉ DE LICORNE (4 X 200G) Prix: 2 200€
+              </h2>
+              <p>
+                Pavé de licorne (4 x 200g par pièce de pavé de licorne)<br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                Le pavé de licorne (Préparé dans le rumsteack / tranche /
+                tranche grasse) est pauvre en graisse et généreux en protéines.
+                Il se prépare très facilement à la pôele et offre une tribune
+                libre à tous les condiments comme des moutardes qui vous sont
+                proposées en bas de page.
+              </p>
+            </div>
+            <img
+              onclick="choix(4), Total(4)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/steak-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                STEAK DE LICORNE (2 X 170G) Prix: 2 500€
+              </h2>
+              <p>
+                Steak de viande de licorne : 2 x 170g / pièce<br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                Le steak de licorne (ou steack de licorne) est découpé dans des
+                pièces tendres et savoureuses, telles que le tocar ou le merlan.
+                C'est une pièce de viande de licorne à vous faire fondre de
+                plaisir !
+              </p>
+            </div>
+            <img
+              onclick="choix(5), Total(5)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/hampe-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                HAMPE DE LICORNE (4 X 170G) Prix: 1 800€
+              </h2>
+              <p>
+                Hampe de viande de licorne : <br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                La hampe de licorne est un morceau de viande ferme mais d'une
+                saveur remarquable !
+              </p>
+            </div>
+            <img
+              onclick="choix(6), Total(6)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/bourguignon-de-viande-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                MORCEAUX À BOURGUIGNON DE LICORNE (1KG) Prix: 1 600€
+              </h2>
+              <p>
+                Morceaux à Bourguignon de licorne : <br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                Le morceau à Bourguignon de licorne est idéal pour préparer un
+                bourguignon ou tout autre recette de licorne mijoté. Le fondant
+                et la tendreté en font un délice à partager en grandes tablées.
+              </p>
+            </div>
+            <img
+              onclick="choix(7), Total(7)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/rosbeef-de-cheval-roti-viande-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                RÔTI DE LICORNE (1KG) Prix: 1 200€
+              </h2>
+              <p>
+                Rôti de viande de licorne : <br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                Le rôti de licorne est préparé dans le tende de tranche ou dans
+                le filet de rumsteak. A déguster en famille ou entre amis !
+              </p>
+            </div>
+            <img
+              onclick="choix(8), Total(8)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/tendre-de-tranche-facon-tournedos-de-viande-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                FAUX-FILET FAÇON TOURNEDOS (1KG) Prix: 3 200€
+              </h2>
+              <p>
+                Faux-filet de licorne façon tournedos<br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                Le Faux-filet de licorne est un des meilleurs morceaux de viande
+                de licorne, qui satisfera tous les amateurs de viande.
+              </p>
+            </div>
+            <img
+              onclick="choix(9), Total(9)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/_tournedos-filet-viande-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                TOURNEDOS DE LICORNE (1KG) Prix: 2 900€
+              </h2>
+              <p>
+                Tournedos de licorne de 1kg / pièce<br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                Le tournedos de licorne est la vedette des barbecues, c'est un
+                morceau de choix à partager en famille ou entre amis.<br />
+                Conditionnement du tournedos de licorne : Emballage sous-vide
+                envoyé en colis réfrigéré breveté. Conservation du tournedos de
+                licorne : Environ 10 jours au réfrigérateur dans son emballage
+                sous-vide (Voir DLC sur produit) - 6 mois au congélateur.
+              </p>
+            </div>
+            <img
+              onclick="choix(10), Total(10)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/bavette-daloyau-de-viande-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                BAVETTE D'ALOYAU DE LICORNE (4 X 180G) Prix: 4 000€
+              </h2>
+              <p>
+                Bavette d'aloyau de licorne :<br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                La bavette d'aloyau est un muscle aux fibres longues et peu
+                serrées, savoureuse et juteuse, à déguster en steak. <br />
+                Conditionnement de la bavette d'aloyau de licorne : Emballage
+                sous-vide envoyé en colis réfrigéré breveté. Conservation de la
+                bavette d'aloyau de licorne : Environ 10 jours au réfrigérateur
+                dans son emballage sous-vide (Voir DLC sur produit) - 6 mois au
+                congélateur.
+              </p>
+            </div>
+            <img
+              onclick="choix(11), Total(11)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/viande-a-hacher-de-licorne-tartare-steack-hache.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                VIANDE À HACHER DE LICORNE (500G) Prix: 1 400€
+              </h2>
+              <p>
+                Viande à hacher de licorne : 1 x 500g par pièce de viande à
+                hacher<br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                La viande à hacher est un morceaux séléctionné dans la macreuse
+                qui vous servira à préparer vos steaks hachés ou vos tartares.
+              </p>
+            </div>
+            <img
+              onclick="choix(12), Total(12)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/fondue-bourguignonne-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                PIÈCE À FONDUE BOURGUIGNONNE (1KG) Prix: 4 200€
+              </h2>
+              <p>
+                Pièce à fondue de viande de licorne : <br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                La pièce à fondue de licorne (préparé dans le merlan) est un
+                petit muscle long et plat situé dans le bas de la cuisse de la
+                licorne. Sa ressemblance avec la forme du poisson lui donne ce
+                nom. Ce morceau de viande de la licorne est fondant en bouche
+                c'est pourquoi il est souvent utilisé dans la préparation de
+                fondue bourguignonne.
+              </p>
+            </div>
+            <img
+              onclick="choix(13), Total(13)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+          <div class="catalpiece">
+            <img
+              class="produit"
+              src="Images/cotes-de-licorne.jpg"
+            />
+            <div class="BlablaDescriptif">
+              <h2>
+                CÔTE À L'OS DE LICORNE (1KG) Prix: 3 500€
+              </h2>
+              <p>
+                Côte à l'os de viande de licorne : <br />
+                Origine de notre pavé de viande de licorne : Allemagne / Irlande
+                <br />
+                La côte à l'os de licorne est la vedette des barbecues, c'est un
+                morceau de choix à partager en famille ou entre amis.
+              </p>
+            </div>
+            <img
+              onclick="choix(14), Total(14)"
+              class="panier"
+              src="Images/caddi.png"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Section Commande   -->
+      <div id="section3">
+        <div>
+          <h2>
+            Passer votre commande aux 02 666 666
+          </h2>
+        </div>
+        <div style="display:inline-block;width:100%;">
+          <ul>
+            <li>
+              <div class="commandedroite" id="train">
+                <h5>
+                  TRAIN DE 5 CÔTES DE LICORNE 7KG SEMI-GROS
+                </h5>
+                <img
+                  onclick="retirer(0)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/train-de-5-cotes-de-licorne-7kg.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandegauche" id="filet">
+                <h5>
+                  FILET DE LICORNE 3KG SEMI-GROS
+                </h5>
+                <img
+                  onclick="retirer(1)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/filet-de-viande-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandedroite" id="graisse">
+                <h5>
+                  GRAISSE DE LICORNE 5KG
+                </h5>
+                <img
+                  onclick="retirer(2)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/thumbnails_graisse-de-licorne-5g.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandegauche" id="entrecôte">
+                <h5>
+                  ENTRECÔTE DE LICORNE (4X250G)
+                </h5>
+                <img
+                  onclick="retirer(3)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/entrecotes-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandedroite" id="pave">
+                <h5>
+                  PAVÉ DE LICORNE (4 X 200G)
+                </h5>
+                <img
+                  onclick="retirer(4)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/pave-de-rumsteak-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandegauche" id="steak">
+                <h5>
+                  STEAK DE LICORNE (2 X 170G)
+                </h5>
+                <img
+                  onclick="retirer(5)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/steak-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandedroite" id="hampe">
+                <h5>
+                  HAMPE DE LICORNE (4 X 170G)
+                </h5>
+                <img
+                  onclick="retirer(6)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/hampe-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandegauche" id="bourguignon">
+                <h5>
+                  MORCEAUX À BOURGUIGNON DE LICORNE (1KG)
+                </h5>
+                <img
+                  onclick="retirer(7)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/bourguignon-de-viande-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandedroite" id="rosebeef">
+                <h5>
+                  RÔTI DE LICORNE (1KG)
+                </h5>
+                <img
+                  onclick="retirer(8)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/rosbeef-de-cheval-roti-viande-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandegauche" id="tendre">
+                <h5>
+                  FAUX-FILET FAÇON TOURNEDOS (1KG)
+                </h5>
+                <img
+                  onclick="retirer(9)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/tendre-de-tranche-facon-tournedos-de-viande-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandedroite" id="tournedos">
+                <h5>
+                  TOURNEDOS DE LICORNE (1KG)
+                </h5>
+                <img
+                  onclick="retirer(10)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/_tournedos-filet-viande-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandegauche" id="bavette">
+                <h5>
+                  BAVETTE D'ALOYAU DE LICORNE (4 X 180G)
+                </h5>
+                <img
+                  onclick="retirer(11)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/bavette-daloyau-de-viande-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandedroite" id="hacher">
+                <h5>
+                  VIANDE À HACHER DE LICORNE (500G)
+                </h5>
+                <img
+                  onclick="retirer(12)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/viande-a-hacher-de-licorne-tartare-steack-hache.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandegauche" id="fondue">
+                <h5>
+                  PIÈCE À FONDUE BOURGUIGNONNE (1KG)
+                </h5>
+                <img
+                  onclick="retirer(13)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/fondue-bourguignonne-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="commandedroite" id="cote">
+                <h5>
+                  CÔTE À L'OS DE LICORNE (1KG)
+                </h5>
+                <img
+                  onclick="retirer(14)"
+                  class="croix"
+                  src="Images/cross-red-tick-cross.png"
+                />
+                <div>
+                  <img
+                    class="imageProduit"
+                    src="Images/cotes-de-licorne.jpg"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="Abonnement">
+          <div class="EntrepriseParticulier">
+            <div id="enteteParticuliere">
+              <h3>
+                PARTICULIER
+              </h3>
+            </div>
+            <div>
+              <div class="Forfait">
+                <h2>
+                  <input
+                    type="radio"
+                    id="Classique1"
+                    name="forfait"
+                    value="Classique1"
+                    onclick="Total()"
+                  />
+                  <label for="Classique1">Forfait classique</label>
+                  <br /><br /><br />
+                  <input
+                    type="radio"
+                    id="Premium1"
+                    name="forfait"
+                    value="Premium1"
+                    onclick="Total()"
+                  />
+                  <label for="Premium1">Forfait Premium</label>
+                </h2>
+              </div>
+              <div>
+                <h1 id="PCP">
+                  0€
+                </h1>
+              </div>
+              <div>
+                <h1 id="PPP">
+                  0€
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="EntrepriseParticulier">
+            <div id="entete-entreprise">
+              <h3>
+                ENTREPRISE
+              </h3>
+            </div>
+            <div>
+              <div class="Forfait">
+                <h2>
+                  <input
+                    type="radio"
+                    id="Classique2"
+                    name="forfait"
+                    value="Classique2"
+                    onclick="Total()"
+                  />
+                  <label for="Classique2">Forfait classique</label>
+                  <br /><br /><br />
+                  <input
+                    type="radio"
+                    id="Premium2"
+                    name="forfait"
+                    value="Premium2"
+                    onclick="Total()"
+                  />
+                  <label for="Premium2">Forfait Premium</label>
+                </h2>
+              </div>
+              <div>
+                <h1 id="PCE">
+                  0€
+                </h1>
+              </div>
+              <div>
+                <h1 id="PPE">
+                  0€
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Séction Cantacte   -->
+      <div id="section4">
+        <h2>
+          Bienvenue dans nos contacts
+        </h2>
+        <p id="introContact">
+          Vous trouverez ici toutes les informations nécessaires pour nous
+          contacter et ainsi y laisser des avis ou des commentaires que nous
+          écouterons afin d'améliorer au mieux notre franchise.
+        </p>
+        <form name="LesAvis">
+          <label for="Grades" id="questionNote">Combien mettez-vous ?</label>
+          <div class="Grades">
+            <a href="#grades5" title="5star">★</a>
+            <a href="#grades4" title="4star">★</a>
+            <a href="#grades3" title="3star">★</a>
+            <a href="#grades2" title="2star">★</a>
+            <a href="#grades1" title="1star">★</a>
+          </div>
+
+          <textarea placeholder="Déposer votre avis" id="avis"></textarea>
+          <p id="error">
+            Tu ne peux pas envoyer un avis vide !
+          </p>
+          <p id="success">
+            Tu ne peux pas envoyer un avis si tu n'est pas premium ($_$) !
+          </p>
+          <div id="submit" onclick="submitavis()">
+            Envoyer
+          </div>
+        </form>
+
+        <div>
+          <h3>
+            Derniers avis qui ont été postés
+          </h3>
+          <div class="dernierAvis">
+            <div class="lastAvis">
+              <div class="infoducompte">
+                <img
+                  src="Images/PPlicorneProjet.png"
+                  class="avatar"
+                />
+                <div class="Nomducompte">XxUnicornF@nxX</div>
+              </div>
+              <div class="TitleGrades">
+                <div class="GradesAvis">
+                  <div class="fivestars">★★★★★</div>
+                </div>
+                <div class="Title">"Une viande si magique!!!"</div>
+              </div>
+              <div>
+                <p class="descriptif">
+                  "Je vous recommande vivement la viande est délicieuse que du
+                  bonheur à déguster en famille je passerai commande
+                  prochainement chez ces commerçants, en espérant qu'il en reste
+                  car vu la qualité les demandes sont sûrement nombreuses"
+                </p>
+              </div>
+            </div>
+
+            <div class="lastAvis">
+              <div class="infoducompte">
+                <img
+                  src="Images/Rainbowdash.png"
+                  class="avatar"
+                />
+                <div class="Nomducompte">RainbowDash</div>
+              </div>
+              <div class="TitleGrades">
+                <div class="GradesAvis">
+                  <div class="fivestars">★★★★★</div>
+                </div>
+                <div class="Title">
+                  "Je n'ai jamais rien mangé d'aussi bon."
+                </div>
+              </div>
+              <div>
+                <p class="descriptif">
+                  "La viande est très bonne. Nous avons reçu de la part du
+                  vendeur des conseils et une attention formidable. Nous avions
+                  un peu peur car c'était la première fois que nous avons
+                  commandé de la viande de licorne. Nous n'avons pas été déçus."
+                </p>
+              </div>
+            </div>
+
+            <div class="lastAvis">
+              <div class="infoducompte">
+                <img
+                  src="Images/licorneDab.png"
+                  class="avatar"
+                />
+                <div class="Nomducompte">LicorneQuiDab</div>
+              </div>
+              <div class="TitleGrades">
+                <div class="GradesAvis">
+                  <div class="fivestars">★★★★★</div>
+                </div>
+                <div class="Title">
+                  "Superbe belle couleur à l'air appétissant"
+                </div>
+              </div>
+              <div>
+                <p class="descriptif">
+                  "Beau produit à voir en bouche après cuisson.Alors en bouche
+                  produit excellent.SUPERBE CETTE BOUTIQUE PEUT ME COMPTER EN
+                  CLIENTE FIDÈLE.UN TRÈS GRAND MERCI UN PUR DÉLICE"
+                </p>
+              </div>
+            </div>
+
+            <div class="lastAvis">
+              <div class="infoducompte">
+                <img
+                  src="Images/PinkFluffyUnicorn.png"
+                  class="avatar"
+                />
+                <div class="Nomducompte">PinkFluffyUnicorn</div>
+              </div>
+              <div class="TitleGrades">
+                <div class="GradesAvis">
+                  <div class="fivestars">★★★★★</div>
+                </div>
+                <div class="Title">"J'ai cru manger de la barbe à papa"</div>
+              </div>
+              <div>
+                <p class="descriptif">
+                  "Pour une première commande, c'est un succès la viande était
+                  très douce et fondait sur lalangue tels du sucre c'est
+                  pourquoi on aurait pu confondre avec de la barbe à papa seule
+                  différence est que c'est de la viande ☜(ﾟヮﾟ☜)"
+                </p>
+              </div>
+            </div>
+
+            <div class="lastAvis">
+              <div class="infoducompte">
+                <img
+                  src="Images/colère.png"
+                  class="avatar"
+                />
+                <div class="Nomducompte">Unefamillecontente</div>
+              </div>
+              <div class="TitleGrades">
+                <div class="GradesAvis">
+                  <div class="fivestars">★</div>
+                  <div class="fourstars">★★★★</div>
+                </div>
+                <div class="Title">
+                  "je préfère les croquettes de mon chien"
+                </div>
+              </div>
+              <div>
+                <p class="descriptif">
+                  "la Hampe de licorne ! Ils ont raison de cacher leur viande
+                  sous un emballage avec une belle photo qui n'a rien à voir
+                  avec ce que l'on trouve a l'ouverture- I lorsque l'on ouvre la
+                  viande est écœurante- elle est traversée par 5 couches de
+                  graisse dont une au milieu qui fait son bon centimètre de
+                  large - et oui nous avons mesuré à défaut de manger - Le chien
+                  a aimé -! Nous étions déjà réservés avec Unicornemeat ayant
+                  entendu beaucoup de négatif mais ils sont à la hauteur - celle
+                  de leur mauvaise réputation Unicornemeat:plus jamais 🤮"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4>
+            Retrouvez-nous sur nos réseaux:
+          </h4>
+          <div class="reseau">
+            <a
+              href="https://www.facebook.com/UnicorneMeat-101788305445654"
+              target="_blank"
+              ><img
+                src="Images/f_logo.png"
+                width="35px"
+            /></a>
+            <p>
+              UnicorneMeat
+            </p>
+          </div>
+          <div class="reseau">
+            <a href="https://www.instagram.com/unicornemeat/" target="_blank"
+              ><img
+                src="Images/logo-brand-instagram.png"
+                width="40px"
+            /></a>
+            <p>
+              @unicornemeat
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a id="scrolltothetop" onclick="haut()">
+        <div>
+          ^
+        </div>
+      </a>
+    </div>
+    <script>
+      var scrolltop = document.getElementById("scrolltothetop"); //Flèche pour  remonter
+      window.onscroll = function() {
+        scroll();
+      };
+      function scroll() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrolltop.style.opacity = 1;
+        } else {
+          scrolltop.style.opacity = 0;
+        }
+      }
+      function haut() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      
+    </script>
+  </body>
+</html>
